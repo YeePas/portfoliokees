@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
   <h1>{{ page.title }}</h1>
-  <div class="post-content">{{ content }}</div>
+  <div class="post-content">{% include inhoud.html html=content %}</div>
   <time datetime="{{ page.date | date_to_xmlschema }}">{% include datum.html date=page.date %}</time>
 </article>
 <p><a href="{{ '/' | relative_url }}">← Alle klusprojecten</a></p>

@@ -1,0 +1,3 @@
+{%- comment -%}Zet de baseurl voor afbeeldingspaden, zodat de site ook onder een submap werkt.{%- endcomment -%}
+{%- assign nieuw = 'src="' | append: site.baseurl | append: '/assets/' -%}
+{{ include.html | replace: 'src="/assets/', nieuw }}

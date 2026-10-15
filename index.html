@@ -5,7 +5,7 @@ layout: default
 {% for post in site.posts %}
 <article class="post">
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <div class="post-content">{{ post.content }}</div>
+  <div class="post-content">{% include inhoud.html html=post.content %}</div>
   <time datetime="{{ post.date | date_to_xmlschema }}">{% include datum.html date=post.date %}</time>
 </article>
 {% endfor %}

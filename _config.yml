@@ -1,8 +1,8 @@
 title: "TIMMEREN MET WILLEMSEN"
 description: "Klusprojecten"
 lang: nl-NL
-url: "https://kees-willemsen.nl"
-baseurl: ""
+url: "https://yeepas.github.io"
+baseurl: "/portfoliokees"
 permalink: /:title/
 timezone: Europe/Amsterdam
 markdown: kramdown
@@ -10,3 +10,9 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

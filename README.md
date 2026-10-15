@@ -13,10 +13,13 @@ Staan er meerdere foto's direct onder elkaar (zonder lege regel ertussen), dan w
 
 ## Live zetten
 
-1. Maak een repo aan op GitHub en push deze map.
-2. Ga naar **Settings → Pages**, kies *Deploy from a branch*, branch `main`, map `/ (root)`.
-3. Vul bij **Custom domain** `kees-willemsen.nl` in (het `CNAME`-bestand staat al klaar) en vink daarna *Enforce HTTPS* aan.
-4. Zet bij je domeinprovider de DNS om:
+De site draait nu als voorbeeld op https://yeepas.github.io/portfoliokees/.
+
+Overstappen naar kees-willemsen.nl:
+
+1. Zet in `_config.yml`: `url: "https://kees-willemsen.nl"` en `baseurl: ""`.
+2. Vul bij **Settings → Pages → Custom domain** `kees-willemsen.nl` in (GitHub maakt dan zelf een `CNAME`-bestand aan) en vink daarna *Enforce HTTPS* aan.
+3. Zet bij je domeinprovider de DNS om:
    - A-records voor `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - CNAME voor `www`: `<github-gebruikersnaam>.github.io`
 
