@@ -1,0 +1,12 @@
+title: "TIMMEREN MET WILLEMSEN"
+description: "Klusprojecten"
+lang: nl-NL
+url: "https://kees-willemsen.nl"
+baseurl: ""
+permalink: /:title/
+timezone: Europe/Amsterdam
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
